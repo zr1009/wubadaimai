@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+*{margin:0;padding:0;}
+body{margin:0;padding:0;font-size:12px;color:#646464;font-family:"微软雅黑";}
+ol,ul,li,p,img{display:block;margin:0;padding:0;}
+ol,ul,li,{list-style:none;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+.top{width:100%;height:30px;background:#f6f6f6;border-bottom:1px solid #e5e5e5;margin:0 auto;}
+.top1{width:1000px;height:30px;margin:0 auto;}
+.top1-left{float:left;width:90px;height:30px;}
+.top1-right{float:right;width:555px;height:30px;line-height:30px;}
+
+.div{
+	display:none;
+	width: 90px;
+	height: 76px;
+	border: 1px solid #CCC;
+	position: absolute;
+	left: 656px;
+	top: 31px;
+	float: left;
+	z-index: 1;
+	float: left;
+	background: #FFF;
+	line-height: 25px;
+	text-align: center;
+}
+.div a{color:#939393;display:block;font-size:10px;}
+.div a:hover{background:#939393;color:#e21512;}
+
+.logo{width:100%;height:106px;margin:0 auto;}
+.logo1{width:1000px;height:106px;margin:0 auto;}
+
+.nav{width:100%;height:45px;margin:0 auto;position:relative;background: url(img/bgnav.png) repeat-x;}
+.nav>ul{margin-left: 175px;}
+.nav>ul>li{float:left;width:125px;}
+.nav ul li ul{width:123px;background:#E21210;display:none;position:absolute;top:40px;z-index:99999;}
+.nav ul li ul li{width:123px;height:40px;line-height:40px;color:#fffdfe;text-align:center;}
+.nav ul li ul li a.hover{background:#fffdfe;color:#E21210;}
+.nav img{display:block;float:left;}
+.nav a{display:block;float:left;width:123px;height:40px;text-align:center;line-height:40px;color:#fffeff;text-decoration:none;font-size:14px;}
+.nav ul>li.hover{background:#bb0f0d;color:#fffdfe;font-weight:bold;line-height:40px;}
+
+
+.weizhi{width:100%;height:50px;background:#fafafa;margin:0 auto;}
+.weizhi1{width:1000px;height:50px;color:#646464;line-height:50px;margin:0 auto;}
+.weizhi1 a{color:#919191;}
+.weizhi1 a:hover{color:#e21210;}
+
+.content{width:100%;height:700px;margin:0 auto;margin-top:20px;}
+.content1{width:1000px;height:auto;margin:0 auto;}
+.content1-left{width:182px;height:440px;border:1px solid #efefef;float:left;border-top:0px;float:left}
+.lie li ol li{background:#f7f7f7;}
+.lie li a{line-height:39px;border-top:1px solid #efefef;background:#FFF;color:#e21210;display:block;padding-left:8px;font-size:14px;background-image:url(img/ms3.jpg);background-repeat:no-repeat;background-position:165px center;}
+.lie li a:hover{line-height:39px;border-top:1px solid #efefef;}
+.lie li ol li a{color:#646464;padding-left:24px;font-size:12px;background-image:url(img/ms1.jpg) no-repeat 167px center;}
+.lie li ol li a:hover{color:#646464;background-color:#e21210;color:#fff;background-image:url(img/ms2.jpg);background-repeat:no-repeat;background-position:167px center;}
+.content1-right{width:795px;height:700PX;margin-left:20px;float:left;}
+.nr{width:793px;height:40px;background:#f3f3f3;color:#656565;border:1px solid #eeeeee;border-bottom:none;line-height:40px;text-align:center;}
+
+.foot{width:100%;height:165px;border-top:1px solid #dddddd;border-bottom:1px solid #dddddd;background:#f9f9f9;margin:0 auto;margin-top:30px;}
+.foot1{width:1000px;height:165px;margin:0 auto;}
+.foot1-1{width:153px;height:110px;float:left;margin-top:30px;}
+.foot1-1 ul{width:58px;height:110px;float:left;margin-left:5px;}
+.foot1-1 ul li a{width:58px;height:27px;color:#676767;text-align:center;line-height:27px;}
+.foot1 ul li a:hover{color:#e21210;}
+.hei{width:63px;height:27px;color:#000;text-align:center;line-height:27px;}
+.foot1-2{width:230px;height:110px;float:left;margin-top:30px;border-left:1px solid #e6e6e6;}
+.foot1-2 ul{width:63px;height:110px;float:left;margin-left:5px;}
+.foot1-2 ul li a{width:63px;height:27px;color:#676767;text-align:center;line-height:27px;}
+.foot-nav{width:100%;height:42px;border-bottom:1px solid #dddddd;background:#f9f9f9;margin:0 auto;}
+.foot-nav1{width:1000px;height:42px;color:#e5e5e5;line-height:42px;font-size:11px;margin:0 auto;}
+.foot-nav1 a{color:#646464;}
+.foot-nav1 a:hover{color:#e21210;}
+
+.dibu{width:100%;height:122px;background:#f9f9f9;margin:0 auto;}
+.dibu1{width:1000px;height:87px;padding-top:35px;margin:0 auto;}
+.dibu1 span a{color:#646464;}
+</style>
+<script src="jquery-1.11.2.js"></script>
+<script src="js.js"></script>
+</head>
+
+<body>
+<div class="top">
+	<div class="top1">
+    	<div class="top1-left">
+            <span style="float:left;"><img src="img/a01.jpg" /></span>
+            <span style="float:left;line-height:30px;">收藏58代卖</span>
+        </div>
+        <div class="top1-right">
+            <span style="float:left;">您好，欢迎来到58代卖</span>
+            <span style="float:left;margin-left:14px;"><img src="img/a02.jpg" /></span>
+            <span style="float:left;">xiangyun</span>
+            <span class="xiangyun" style="float:left;"><img src="img/a14.jpg" /></span>
+            <div class="div">
+               <a href="#" style="background:url(img/a05.jpg);background-position:center left;background-repeat:no-repeat;">我的淘宝</a>
+               <a href="#" style="background:url(img/a06.jpg);background-position:center left;background-repeat:no-repeat;">买家评价</a>
+               <a href="#" style="background:url(img/a07.jpg);background-position:center left;background-repeat:no-repeat;">卖家中心</a>
+            </div>
+          <span style="float:left;margin-left:16px;">可用云货币：<c style="color:#e1110f;">￥401.01</c>　｜　<a  href="#" style="color:#646464;">关于我们</a>　｜　<a  href="#" style="color:#646464;">联系我们</a></span>
+        </div>
+	</div>
+</div>
+<div class="logo">
+	<div class="logo1">
+    	<span style="float:left;"><img src="img/a04.jpg" /></span>
+        <span style="float:right;">
+        	<input type="text" value="请输入关键词" style="width:387px;height:36px;color:#636363;border:1px solid #eeeeee;margin-top:25px;margin-bottom:8px;"/><input type="button" value="搜索"/ style="color:#FFF;width:73px;height:36px;background:#e31110;border:1px solid #bf0705;"><br />
+            <c style="color:#000;">热门搜索：</c><a href="#" style="color:#646464;">代卖优势</a>　|　<a href="#" style="color:#646464;">成功案例</a>　|　<a href="#" style="color:#646464;">创业秘籍</a>　|　<a href="#" style="color:#ff0502;">商品大全</a>
+        </span>
+    </div>
+</div>
+<div class="nav">
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="../首页/index.html">首页</a><img src="img/sth.png">
+                    <ul>
+                        <li><a href="../首页/index.html">首页</a></li>
+                        <li><a href="../首页/index.html">首页</a></li>
+                        <li><a href="../首页/index.html">首页</a></li>
+                        <li><a href="../首页/index.html">首页</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../会员中心/基本信息/基本信息.html">会员中心</a><img src="img/sth.png">
+                    <ul>
+                        <li><a href="../详情页之后/index.html">会员中心</a></li>
+                        <li><a href="../详情页之后/index.html">会员中心</a></li>
+                        <li><a href="../详情页之后/index.html">会员中心</a></li>
+                        <li><a href="../详情页之后/index.html">会员中心</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../供应中心/供应中心.html">供应中心</a><img src="img/sth.png">
+                    <ul>
+                        <li><a href="../供应中心/供应中心.html">供应中心</a></li>
+                        <li><a href="../供应中心/供应中心.html">供应中心</a></li>
+                        <li><a href="../供应中心/供应中心.html">供应中心</a></li>
+                        <li><a href="../供应中心/供应中心.html">供应中心</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="../代卖管理/已批出货品.html">代卖管理</a><img src="img/sth.png">
+                    <ul>
+                        <li><a href="../代卖管理/已批出货品.html">代卖管理</a></li>
+                        <li><a href="../代卖管理/已批出货品.html">代卖管理</a></li>
+                        <li><a href="../代卖管理/已批出货品.html">代卖管理</a></li>
+                        <li><a href="../代卖管理/已批出货品.html">代卖管理</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../格子铺修改/推荐格子铺.html">格子铺专区</a><img src="img/sth.png">
+                    <ul>
+                        <li><a href="../格子铺修改/推荐格子铺.html">格子铺专区</a></li>
+                        <li><a href="../格子铺修改/推荐格子铺.html">格子铺专区</a></li>
+                        <li><a href="../格子铺修改/推荐格子铺.html">格子铺专区</a></li>
+                        <li><a href="../格子铺修改/推荐格子铺.html">格子铺专区</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../实体店管理/分销中心-代销中的货品/index.html">实体店管理</a><img src="img/sth.png">
+                    <ul>
+                        <li><a href="../实体店管理/分销中心-代销中的货品/index.html">实体店管理</a></li>
+                        <li><a href="../实体店管理/分销中心-代销中的货品/index.html">实体店管理</a></li>
+                        <li><a href="../实体店管理/分销中心-代销中的货品/index.html">实体店管理</a></li>
+                        <li><a href="../实体店管理/分销中心-代销中的货品/index.html">实体店管理</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../最新咨询/index.html">最新资讯</a><img src="img/sth.png">
+                    <ul>
+                        <li><a href="../最新咨询/index.html">最新资讯</a></li>
+                        <li><a href="../最新咨询/index.html">最新资讯</a></li>
+                        <li><a href="../最新咨询/index.html">最新资讯</a></li>
+                        <li><a href="../最新咨询/index.html">最新资讯</a></li>
+                    </ul>
+                </li>               
+                <li>
+                    <a href="../操作流程/caozuo.html">操作流程</a>
+                    <ul>
+                        <li><a href="../操作流程/caozuo.html">操作流程</a></li>
+                        <li><a href="../操作流程/caozuo.html">操作流程</a></li>
+                        <li><a href="../操作流程/caozuo.html">操作流程</a></li>
+                        <li><a href="../操作流程/caozuo.html">操作流程</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+</div>
+<div class="weizhi">
+	<div class="weizhi1">您现在的位置：<a href="#">58代卖</a> > <a href="#">会员中心</a> > <a href="../详情页之后/index.html">我的店铺</a> > <a href="../详情页之后/index.html">购物订单管理</a></div>
+</div>
+<div class="content">
+	<div class="content1">
+    	<div class="content1-left">
+       		 <ul class="lie">
+            	<li><a href="#">交易管理</a>
+                    <ol>
+                        <li><a href="已批出货品.html">已批出货品</a></li>
+                        <li><a href="代销中的货品.html">代销中的货品</a></li>
+                        <li><a href="供应商对账2.html">货应商对账</a></li>
+                    </ol>
+                </li>
+                <li><a href="#">管理商品</a>
+                    <ol>
+                        <li><a href="添加商品.html">添加商品</a></li>
+                        <li><a href="管理商品.html">管理商品</a></li>
+                        <li><a href="管理库存.html">管理库存</a></li>
+                    </ol>
+            	</li>
+            	<li><a href="#">店铺管理</a>
+               	 <ol>
+                   	 <li><a href="#">查看我的店铺</a></li>
+                   	 <li><a href="店铺基本设置.html">店铺基本设置</a></li>
+                	</ol>
+            	</li>
+        	</ul>
+    	</div>
+        <div class="content1-right">
+        	<div class="nr">您当前可退额度为：|500.00</div>
+       	  <table border="1" cellspacing="0" cellpadding="0" style="border:#eeeeee;">
+              <tr style="border:#eeeeee;">
+                <th width="61" height="43" scope="col">代卖交易号</th>
+                <th width="22" scope="col">ID</th>
+                <th width="60" scope="col">商品图片</th>
+                <th width="60" scope="col">商品名称</th>
+                <th width="38" scope="col">单位</th>
+                <th width="78" scope="col">代卖中的数量</th>
+                <th width="77" scope="col">退货中的数量</th>
+                <th width="50" scope="col">价格</th>
+                <th width="51" scope="col">押款金额</th>
+                <th width="55" scope="col">客户名称</th>
+                <th width="63" scope="col">创建时间</th>
+                <th width="63" scope="col">最晚退货时间</th>
+                <th width="89" scope="col">操作</th>
+              </tr>
+              <tr style="text-align:center;border:#eeeeee;">
+                <td height="120">187</td>
+                <td>394</td>
+                <td>&nbsp;</td>
+                <td>自行车</td>
+                <td>个</td>
+                <td>0</td>
+                <td>0</td>
+                <td>200.00</td>
+                <td>0</td>
+                <td>lisong</td>
+                <td><p>2014/9/29</p>
+                <p>/17:52:56</p></td>
+                <td><p>2014/9/30</p>
+                <p>/17:52:56</p></td>
+                <td><input type="button" value="结算" style="width:70px;height:30px;color:#FFF;background:#e01310;border:0;margin-top:10px;"/><input type="button" value="延长带卖时间" style="width:84px;height:30px;color:#FFF;background:#e01310;border:0;margin-top:40px;"/></td>
+              </tr>
+            </table>
+            
+            <p style="line-height:52px;font-size:13px;"><b>销货记录</b></p>
+            <table width="795" border="1" cellpadding="0" cellspacing="0" style="border:#eeeeee;">
+              <tr style="border:#eeeeee;background:#fafafa;">
+                <th width="263" height="40" scope="col">销货数量</th>
+                <th width="262" scope="col">销货日期</th>
+                <th width="262" scope="col">操作人</th>
+              </tr>
+              <tr style="text-align:center;border:#eeeeee;">
+                <td height="50">1</td>
+                <td>2014/11/27 12:28:31</td>
+                <td>xiangyun</td>
+              </tr>
+            </table>
+			<p style="line-height:52px;font-size:13px;"><b>退货记录</b></p>
+            
+            <table width="795" border="1" cellpadding="0" cellspacing="0" style="border:#eeeeee;">
+              <tr style="border:#eeeeee;background:#fafafa;">
+                <th width="157" height="40" scope="col">退货数量</th>
+                <th width="156" scope="col">退货日期</th>
+                <th width="157" scope="col">操作人</th>
+                <th width="156" scope="col">状态</th>
+                <th width="157" scope="col">操作</th>
+              </tr>
+              <tr style="text-align:center;border:#eeeeee;">
+                <td height="50">1</td>
+                <td>2014/11/27 12:28:31</td>
+                <td>xiangyun</td>
+                <td>正常</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+            
+            <p style="line-height:52px;font-size:13px;"><b>结算记录</b></p>
+            <table width="795" border="1" cellpadding="0" cellspacing="0" style="border:#eeeeee;">
+              <tr style="border:#eeeeee;background:#fafafa;">
+                <th width="262" height="40" scope="col">结算数量</th>
+                <th width="263" scope="col">结算日期</th>
+                <th width="262" scope="col">操作人</th>
+              </tr>
+              <tr style="text-align:center;border:#eeeeee;">
+                <td height="50">1</td>
+                <td>2014/11/27 12:28:31</td>
+                <td>xiangyun</td>
+              </tr>
+            </table>
+
+			<a href="代销中的货品.html"><input type="button" value="返回" style="width:70px;height:30px;color:#FFF;background:#e01310;border:0;margin-top:18px;"/></a>
+        </div>
+    </div>
+</div>
+<div class="foot">
+	<div class="foot1">
+       <div class="foot1-1">
+           <img src="img/a08.jpg" width="30" height="27" style="float:left;">
+                <ul>
+                  <li class="hei">新手指南</li>
+                  <li><a href="#">操作指南</a></li>
+                  <li><a href="#">免费注册</a></li>
+                  <li><a href="#">热门问题</a></li>
+                </ul>
+       </div>
+       <div class="foot1-2">
+           <img src="img/a09.jpg" width="30" height="27" style="float:left;margin-left:62px;">
+                <ul>
+                  <li class="hei">供应指南</li>
+                  <li><a href="#">设置店铺</a></li>
+                  <li><a href="#">添加商品</a></li>
+                  <li><a href="#">销售发货</a></li>
+                </ul>
+       </div>
+       <div class="foot1-2">
+           <img src="img/a10.jpg" width="30" height="27" style="float:left;margin-left:62px;">
+                <ul>
+                  <li class="hei">分销指南</li>
+                  <li><a href="#">选货下单</a></li>
+                  <li><a href="#">支付货款</a></li>
+                  <li><a href="#">开始代买</a></li>
+                </ul>
+       </div>
+       <div class="foot1-2">
+           <img src="img/a11.jpg" width="30" height="27" style="float:left;margin-left:62px;">
+                <ul>
+                  <li class="hei">支付与体现</li>
+                  <li><a href="#">体现方式</a></li>
+                  <li><a href="#">充值说明</a></li>
+                  <li><a href="#">支付说明</a></li>
+                </ul>
+       </div>
+       <div class="foot1-1">
+           <img src="img/a12.jpg" width="30" height="27" style="float:left;margin-left:36px;">
+                <ul>
+                  <li class="hei">会员说明</li>
+                  <li><a href="#">供应商</a></li>
+                  <li><a href="#">分销商</a></li>
+                  <li><a href="#">有问必答</a></li>
+                </ul>
+       </div>
+	</div>
+</div>
+<div class="foot-nav">
+	<div class="foot-nav1"><a href="#">首页</a> ｜ <a href="#">产品大全</a> ｜ <a href="#">供应中心</a> ｜ <a href="#">分销中心</a> ｜ <a href="#">格子铺专区</a> ｜ <a href="#">最新资讯</a>　　　　　　　　<c style="color:#333;">代买供货：</c><a href="#">分销商代卖操作方法</a> ｜ <a href="#">店铺管理系统</a> ｜ <a href="#">进货流程</a> ｜ <a href="#">分销商入口</a> ｜ <a href="#">进货流程</a> ｜ <a href="#">分销商入口</a> ｜ <a href="#">供应入口</a></div>
+</div>
+<div class="dibu">
+	<div class="dibu1">
+		<span style="float:left;line-height:26px;color:#989898;">Copyright@ 2013xiangyunshangwu.com All Rights Reserved 58代买版权所有<br />
+		Icp证：京icp备13019928号</span><span style="float:left;width:264px;height:59px;text-align:center;line-height:100px;background-image:url(img/a13.jpg);margin-left:50px;"><a href="#">卖家保证</a>　　　 <a href="#">商家认证</a>　　　 <a href="#">安全交易</a></span>
+        <span style="float:left;width:112px;height:38px;margin-top:10px;padding-left:43px;font-size:14px;line-height:38px;background-image:url(img/a16.jpg);background-repeat:no-repeat;margin-left:90px;"><b>010-88333615</b></span>
+	</div>
+</div>
+</body>
+</html>
+
+ 

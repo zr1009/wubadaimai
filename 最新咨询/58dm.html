@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="58dm.css">
+  <script src="jq库/jquery-1.11.2.js"></script>
+  <script>
+   $(function(){
+     $("#nav ul li").hover(function(){
+      $(this).find('ul').stop().slideToggle()
+     })
+         $("#s2").click(function(){
+       $(this).stop().next().toggle()
+     })
+          $("#top_m ul li").hover(function(){
+        $(this).toggleClass("b")
+        })
+
+            $.ajax({
+       url:"58dm.json",
+       dataType:"json",
+       success:function(data){
+         if(data.msg=="0"){
+        var news1=data.news
+        var str='';
+        $.each(news1,function(index,value){
+             str=$('<li>'+value.title+'</li>')
+              $('#wzlb #ul3').append(str)
+        })
+        }
+       }
+  })  
+   })
+
+  </script>
+</head>
+<body>
+<div id='main'>
+	<!-- top -->
+	<div id='top'>
+	<div id="top_m">
+	<img src="img/未标题-1.jpg" alt="">
+	<span>收藏58代卖</span>
+	<span id='s1'>您好,欢迎来到58代卖</span>
+	<img src="img/未标题-2.jpg" alt="">
+	<span>xianqyun</span>
+	<img id='s2' src="img/未标题-3.jpg" alt="">
+  <ul>
+    <li><img id="i1" src="img/未标题-5.jpg" alt=""><span id="s6">个人设置</span></li>
+    <li><img id="i1" src="img/未标题-6.jpg" alt=""><span id="s6">我的账户</span></li>
+    <li><img id="i1" src="img/未标题-7.jpg" alt=""><span id="s6">退出登录</span></li>
+  </ul>
+	<span>可用货币:</span>
+	<span id='s3'>$401.01</span>
+	<span id='s4'>关于我们</span>			
+	<span id='s5'>联系我们</span>	
+	</div>
+	</div>
+  <!-- logo -->
+  <div class="logo">
+  <div class="logo_z">
+    <img src="img/未标题-4.jpg" alt="">  
+  </div>
+  <div class="logo_y">
+    <span id="sear">
+      <input type="text" id="search_nr" value="请输入关键字" />
+      <input type="button" id="search" value="搜索" />
+    </span>
+    <ul>
+      <li style="color:#666666">热门搜索:</li>
+      <li>代卖优势</li>
+      <li style="color:#d9d9d9;">|</li>
+      <li>成功案例</li>
+      <li style="color:#d9d9d9;">|</li>
+      <li>创业秘籍</li>
+      <li style="color:#d9d9d9;">|</li>
+      <li style="color:#ff0800;">商品大全</li>
+    </ul>
+  </div>
+</div>
+<!-- 导航开始 -->
+<div id="nav">
+  <ul>
+    <li ><a href="#">首页</a>
+      <ul>
+      <li>首页</li>
+      <li>首页</li>
+      <li>首页</li>
+      <li>首页</li>
+      <li>首页</li>
+    </ul></li>
+    <li><a href="#">需求中心</a>
+     <ul>
+       <li>需求中心</li>
+        <li>需求中心</li>
+         <li>需求中心</li>
+          <li>需求中心</li>
+           <li>需求中心</li>
+     </ul>
+    </li>
+    <li><a href="#">供应中心</a>
+      <ul>
+       <li>供应中心</li>
+        <li>供应中心</li>
+         <li>供应中心</li>
+          <li>供应中心</li>
+           <li>供应中心</li>
+     </ul></li>
+    <li><a href="#">代卖管理</a>
+        <ul>
+       <li>代卖管理</li>
+        <li>代卖管理</li>
+         <li>代卖管理</li>
+          <li>代卖管理</li>
+           <li>代卖管理</li>
+     </ul>
+    </li>
+    <li><a href="#">实体店管理</a>
+         <ul>
+       <li>实体店管理</li>
+        <li>实体店管理</li>
+         <li>实体店管理</li>
+          <li>实体店管理</li>
+           <li>实体店管理</li>
+     </ul></li>
+    <li><a href="#">格子铺专区</a>
+       <ul>
+       <li>格子铺专区</li>
+        <li>格子铺专区</li>
+         <li>格子铺专区</li>
+          <li>格子铺专区</li>
+           <li>格子铺专区</li>
+       
+     </ul></li>
+    <li><a href="#">最新资讯</a>
+       <ul>
+       <li>最新咨询</li>
+        <li>最新咨询</li>
+         <li>最新咨询</li>
+          <li>最新咨询</li>
+           <li>最新咨询</li>
+     </ul></li>
+    <li><a href="#">操作指南</a>
+       <ul>
+       <li>操作指南</li>
+        <li>操作指南</li>
+         <li>操作指南</li>
+          <li>操作指南</li>
+           <li>操作指南</li>
+     </ul></li>
+  </ul>
+</div>
+<!-- 咨询 -->
+    <div id='zx'>
+        <span id='s7'>您现在的位置：58代卖></span><span
+        id="s8">最新咨询</span>
+    </div>
+ <!-- 最新活动 -->
+ <div id='zxhd'>
+  <div id="hdwz">
+    <div id="hdwz_left">
+      <img src="img/未标题-8.jpg" alt="">
+      <div id="qc">
+       <div id="qc_l">
+        <ul>
+          <li><img src="img/未标题-9.jpg" alt="">全场音响39元起~</li>
+          <li><img src="img/未标题-9.jpg" alt="">58代卖平台开始招商啦啦</li>
+          <li><img src="img/未标题-9.jpg" alt="">零租金全国连锁格子铺招格</li>
+          <li><img src="img/未标题-9.jpg" alt="">开格子店100%赚钱的秘密</li>
+          <li><img src="img/未标题-9.jpg" alt="">58代卖推广活动开始啦</li>
+          <li><img src="img/未标题-9.jpg" alt="">58代卖推广活动招商啦</li>
+          <li><img src="img/未标题-9.jpg" alt="">58代卖平台寻找合作伙伴</li>
+        </ul>
+        <img src="img/未标题-10.jpg" alt=""> 
+       </div>
+       <div id="qc_r">
+         <ul>
+           <li>2014-08-19</li>
+           <li>2014-08-19</li>
+           <li>2014-08-19</li>
+           <li>2014-08-19</li>
+           <li>2014-08-19</li>
+           <li>2014-08-19</li>
+
+         </ul>
+       </div>  
+      </div>
+    </div>
+    <div id="hdwz_right">
+     <div id="wzlb">
+      <h1>文章列表</h1>
+      <ul id="ul3">
+ 
+      </ul>
+      </div> 
+    </div>
+  </div> 
+ </div>
+ <!-- 图片列表 -->
+  <div id='tplb'>
+  <div id='tp1'>
+    <ul>
+      <li><img src="img/未标题-31.jpg" alt=""><p>晶坤水晶制品有限公司</p></li>
+        <li><img src="img/未标题-32.jpg" alt=""><p>愚翁的智慧</p></li>
+          <li><img src="img/未标题-33.jpg" alt=""><p>晶凌动电子200</p></li>
+           <li><img  src="img/未标题-34.jpg" alt="" id="im"><p>凝萃坊</p></li>
+            <li><img src="img/未标题-35.jpg" alt=""><p>天伦电器</p></li>
+             <li><img src="img/未标题-36.jpg" alt="" id='im1'><p>lsh1978</p></li>
+
+    </ul>
+  </div>
+  <div id='tp2'>
+       <ul>
+      <li><img src="img/未标题-37.jpg" alt=""><p>美尔多斯</p></li>
+        <li><img src="img/未标题-38.jpg" alt=""><p>旺运宝贝</p></li>
+          <li><img src="img/未标题-39.jpg" alt=""><p>浪漫宝贝</p></li>
+           <li><img  src="img/未标题-40.jpg" alt="" ><p>科沃斯旗舰店</p></li>
+            <li><img src="img/未标题-41.jpg" alt=""><p>喜鹊鸣</p></li>
+             <li><img src="img/未标题-42.jpg" alt=""><p>silda旗舰店</p></li>
+
+    </ul> 
+  </div>
+  </div>
+ <!-- 底部开始 -->
+<div class="foot1">
+  <div class="foot1_01">
+    <ul>
+      <li style="font-weight:bold;"><img src="img/未标题-12.jpg" />新手指南</li>
+      <li>操作指南</li>
+      <li style="text-indent:30px;">免费注册</li>
+      <li style="text-indent:30px;">热门问题</li>
+    </ul>
+    <ul>
+      <li style="font-weight:bold;"><img src="img/未标题-13.jpg" />供应指南</li>
+      <li>设置店铺</li>
+      <li style="text-indent:30px;">添加商品</li>
+      <li style="text-indent:30px;">销售发货</li>
+    </ul>
+    <ul>
+      <li style="font-weight:bold;"><img src="img/未标题-14.jpg" />分销指南</li>
+      <li>选货下单</li>
+      <li style="text-indent:30px;">支付贷款</li>
+      <li style="text-indent:30px;">开始代卖</li>
+    </ul>
+    <ul>
+      <li style="font-weight:bold;"><img src="img/未标题-15.jpg" />支付与提现</li>
+      <li>提现方式</li>
+      <li style="text-indent:30px;">充值说明</li>
+      <li style="text-indent:30px;">支付方式</li>
+    </ul>
+    <ul style="border-right:0px; margin-right:0px;width:88px;">
+      <li style="font-weight:bold;"><img src="img/未标题-16.jpg" />会员说明</li>
+      <li>供应商</li>
+      <li style="text-indent:30px;">分销商</li>
+      <li style="text-indent:30px;">有问必答</li>
+    </ul>
+  </div>
+</div>
+<div class="foot2">
+  <ul>
+    <li><a href="#">首页</a></li>
+    <li>|</li>
+    <li><a href="#">产品大全</a></li>
+    <li>|</li>
+    <li><a href="#">供应中心</a></li>
+    <li>|</li>
+    <li><a href="#">分销中心</a></li>
+    <li>|</li>
+    <li><a href="#">格子铺专区</a></li>
+    <li>|</li>
+    <li style="margin-right:40px;"><a href="#">最新资讯</a></li>
+    <li><a href="#"><b>代卖供货：</b>分销商代卖操作方法</a></li>
+    <li>|</li>
+    <li><a href="#">店铺管理系统</a></li>
+    <li>|</li>
+    <li><a href="#">进货流程</a></li>
+    <li>|</li>
+    <li><a href="#">分销商入口</a></li>
+    <li>|</li>
+    <li style="margin-right:0px;"><a href="#">供应入口</a></li>
+  </ul>
+</div>
+<div class="foot3">
+  <div class="foot03_nr">
+    <div class="foot03_n_z">
+      Copyright© 2013 xiangyunshangwu.com All Rights Reserved 58代卖版权所有<br />
+      ICP证：京ICP备13019928号
+    </div>
+    <div class="foot03_n_zh">
+      <span>
+        <img src="img/未标题-17.jpg" /><br />
+        卖家保证
+      </span>
+      <span>
+        <img src="img/未标题-18.jpg" /><br />
+        商家认证
+      </span>
+      <span style="border-right:0px;">
+        <img src="img/未标题-19.jpg" /><br />
+        安全交易
+      </span>
+    </div>
+    <div class="foot03_n_y">
+      <img src="img/未标题-20.jpg" />
+      010-88333615
+    </div>
+  </div>
+</div>
+
+
+</div>	
+</body>
+</html>

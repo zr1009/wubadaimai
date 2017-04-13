@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="jq库/jquery-1.11.2.js"></script>
+    <script>
+        // $(function () {
+        //     $("#nav ul li").hover(function () {
+        //         $(this).find('ul').stop().slideToggle()
+        //     })
+        //     $("#s2").click(function () {
+        //         $(this).stop().next().toggle()
+        //     })
+        //     $("#top_m ul li").hover(function () {
+        //         $(this).toggleClass("b")
+        //     })
+
+        //     var oUl = $('.ul1 ul');
+        //     var oL = $('.sp .left');
+        //     var oR = $('.sp .right');
+        //     var num = 0;
+        //     oR.click(function () {
+        //         num++;
+        //         if (num == 4) {
+        //             num = 3;
+        //         }
+        //         ;
+        //         oUl.animate({'left': -50 * num}, 500);
+        //     });
+        //     oL.click(function () {
+                // num--;
+                // if (num == -1) {
+                //     num = 0;
+                // }
+                // ;
+        //         oUl.animate({'left': -50 * num}, 500);
+        //     });
+        //     $('.sp ul li').mouseover(function () {
+        //         var index = $(this).index();
+        //         $('.box .dtp img').eq(index).fadeIn().siblings().hide()
+        //     });
+
+        // })
+  $(function(){
+    var oSpan=$('.box span');
+    var oS=$('.box s');
+    var oUl=$('.list ul');
+    var oLi=$('.list ul li');
+    var oImg=$('.big-tp img');
+    var num=0;
+    oS.click(function(){
+      num++;
+      if (num == 4) {
+          num = 3;
+      }
+      ;
+      oUl.animate({'left': -50 * num}, 500);
+    });
+    oSpan.click(function(){
+       num--;
+        if (num == -1) {
+            num = 0;
+        }
+        ;
+      oUl.animate({'left': -50 * num}, 500);
+    });
+    oLi.mouseover(function(){
+      var index=$(this).index();
+      oImg.eq(index).fadeIn().siblings().fadeOut();
+      $('.big-img img').eq(index).fadeIn().siblings().fadeOut();
+    });
+    // oLi.click(function(){
+    //  var index=$(this).index();
+    //  oImg.eq(index).fadeIn().siblings().fadeOut();
+    // });
+
+
+
+
+
+
+    $('.big-tp').hover(function(){
+      $('.big-tp p,.big-img').toggle();
+    }).mousemove(function(e){
+      var pW=$('.big-tp p').width();
+      var pH=$('.big-tp p').height();
+      var L=e.pageX-pW/2-$('.big-tp').offset().left;
+      var H=e.pageY-pH/2-$('.big-tp').offset().top;
+      if(L<0){
+        L=0;
+      }
+      if(H<0){
+        H=0;
+      }
+      if(L>$('.big-tp img').width()-pW){
+        L=$('.big-tp img').width()-pW
+      }
+      if(H>$('.big-tp img').height()-pH){
+        H=$('.big-tp img').height()-pH
+      }
+      $('.big-tp p').css({'left':L+'px'});
+      $('.big-tp p').css({'top':H+'px'});
+      var persentX=L/($('.big-tp').width()-pW);
+      var persentY=H/($('.big-tp').height()-pH);
+      $('.big-img img').css({'left':-persentX*($('.big-img img').width()-$('.big-img').width())+'px'});
+      $('.big-img img').css({'top':-persentY*($('.big-img img').height()-$('.big-img').height())+'px'})
+
+
+    });
+
+
+
+
+
+
+
+
+
+  })
+    </script>
+</head>
+
+<body>
+<!-- 页头开始 -->
+<div class="header">
+    <div id='top'>
+        <div id="top_m">
+            <img src="img/未标题-1.jpg" alt="">
+            <span>收藏58代卖</span>
+            <span id='s1'>您好,欢迎来到58代卖</span>
+            <img src="img/未标题-2.jpg" alt="">
+            <span>xianqyun</span>
+            <img id='s2' src="img/未标题-3.jpg" alt="">
+            <ul>
+                <li><img id="i1" src="img/未标题-5.jpg" alt=""><span id="s6">个人设置</span></li>
+                <li><img id="i1" src="img/未标题-6.jpg" alt=""><span id="s6">我的账户</span></li>
+                <li><img id="i1" src="img/未标题-7.jpg" alt=""><span id="s6">退出登录</span></li>
+            </ul>
+            <span>可用货币:</span>
+            <span id='s3'>$401.01</span>
+            <span id='s4'>关于我们</span>
+            <span id='s5'>联系我们</span>
+        </div>
+    </div>
+</div>
+<!-- 页头结束 -->
+
+<!-- logo开始 -->
+<div class="logo">
+    <div class="logo_z">
+        <img src="img/未标题-4.jpg" alt="">
+    </div>
+    <div class="logo_y">
+    <span id="sear">
+      <input type="text" id="search_nr" value="请输入关键字"/>
+      <input type="button" id="search" value="搜索"/>
+    </span>
+        <ul>
+            <li style="color:#666666">热门搜索:</li>
+            <li>代卖优势</li>
+            <li style="color:#d9d9d9;">|</li>
+            <li>成功案例</li>
+            <li style="color:#d9d9d9;">|</li>
+            <li>创业秘籍</li>
+            <li style="color:#d9d9d9;">|</li>
+            <li style="color:#ff0800;">商品大全</li>
+        </ul>
+    </div>
+</div>
+<!-- logo结束 -->
+
+<!-- 导航开始 -->
+<div id="nav">
+    <ul>
+        <li><a href="../首页/index.html">首页</a>
+            <ul>
+                <li>首页</li>
+                <li>首页</li>
+                <li>首页</li>
+                <li>首页</li>
+            </ul>
+        </li>
+        <li><a href="../详情页之后/index.html">会员中心</a>
+            <ul>
+                <li>会员中心</li>
+                <li>会员中心</li>
+                <li>会员中心</li>
+                <li>会员中心</li>
+            </ul>
+        </li>
+        <li><a href="../供应中心/供应中心.html">供应中心</a>
+            <ul>
+                <li>供应中心</li>
+                <li>供应中心</li>
+                <li>供应中心</li>
+                <li>供应中心</li>
+            </ul>
+        </li>
+        <li><a href="../代卖管理/已批出货品.html">代卖管理</a>
+            <ul>
+                <li>代卖管理</li>
+                <li>代卖管理</li>
+                <li>代卖管理</li>
+                <li>代卖管理</li>
+            </ul>
+        </li>
+        <li><a href="../实体店管理/分销中心-代销中的货品/index.html">实体店管理</a>
+            <ul>
+                <li>实体店管理</li>
+                <li>实体店管理</li>
+                <li>实体店管理</li>
+                <li>实体店管理</li>
+            </ul>
+        </li>
+        <li><a href="../格子铺修改/推荐格子铺.html">格子铺管理</a>
+            <ul>
+                <li>格子铺管理</li>
+                <li>格子铺管理</li>
+                <li>格子铺管理</li>
+                <li>格子铺管理</li>
+            </ul>
+        </li>
+        <li><a href="../最新咨询/index.html">最新资讯</a>
+            <ul>
+                <li>最新资讯</li>
+                <li>最新资讯</li>
+                <li>最新资讯</li>
+                <li>最新资讯</li>
+            </ul>
+        </li>
+        <li><a href="../操作流程/caozuo.html">操作指南</a>
+            <ul>
+                <li>操作指南</li>
+                <li>操作指南</li>
+                <li>操作指南</li>
+                <li>操作指南</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<!-- 导航结束 -->
+<!-- 咨询 -->
+<div id='zx'>
+    <span id='s7'>您现在的位置：58代卖>会员中心>我的店铺></span><span
+        id="s8">购物订单管理</span>
+</div>
+<div id='ypzs'>
+    <div id='pg'>
+        <h2>苹果(APPLE)iphone 5s 16G版 4G手机(金色)</h2>
+    </div>
+    <div id='pg_l'>
+        <div id='pg_l1'>
+            <div class="box">
+                <div class="big-tp">
+                  <img style="display: block;" src="img/1md.jpg"/>
+                  <img src="img/2md.jpg"/>
+                  <img src="img/3md.jpg"/>
+                  <img src="img/4md.jpg"/>
+                  <img src="img/6md.jpg"/>
+                  <img src="img/11md.jpg"/>
+                  <p></p>
+                </div>
+                <span><b></b></span>
+                <s><i></i></s>
+                <div class="list">
+                  <ul>
+                    <li><img src="img/1min.jpg"/></li>
+                    <li><img src="img/li2.jpg"/></li>
+                    <li><img src="img/3min.jpg"/></li>
+                    <li><img src="img/li4.jpg"/></li>
+                    <li><img src="img/li6.jpg"/></li>
+                    <li><img src="img/li11.jpg"/></li>
+                  </ul>
+                </div>
+                <div class="big-img">
+                  <img style="display: block;" src="img/1md.jpg"/>
+                  <img src="img/2md.jpg"/>
+                  <img src="img/3md.jpg"/>
+                  <img src="img/4md.jpg"/>
+                  <img src="img/6md.jpg"/>
+                  <img src="img/11md.jpg"/>
+                </div>
+            </div>
+        </div>
+        <div id='pg_l2'>
+            <div id='xxx'>
+                <div id='div1'><b>详细信息</b></div>
+                <div id='div2'><p>成交<span>47305</span></p></div>
+                <div id='div3'><p>评价<span>10</span></p></div>
+            </div>
+            <div id='jy'>
+                <div id='jyls'>
+                    <ul>
+                        <li>建议零售价</li>
+                        <li>品牌</li>
+                        <li>加工方式</li>
+                        <li>型号</li>
+                        <li>开盖方式</li>
+                        <li>图案</li>
+                        <li>库存类型</li>
+                    </ul>
+                </div>
+                <div id='jg'>
+                    <ul>
+                        <li>￥298.00</li>
+                        <li>维卡丝</li>
+                        <li>压花</li>
+                        <li>80008-3</li>
+                        <li>拉链</li>
+                        <li>格纹</li>
+                        <li>整单</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='pg_r'>
+        <div id='ktwz'>
+            <div id='ktwz1'>
+                <p id='p1'><b>可退货百分比:</b>65%</p>
+
+                <p id='p2'>代卖拿货价:<span><b>￥4199.00</b></span></p>
+            </div>
+            <div id='ktwz2'>
+                <p id='p1'><b>最晚退货时间:</b>2014/11/11</p>
+
+                <p id='p2'>建议零售价:<span><b>￥4300.00</b></span></p>
+            </div>
+        </div>
+        <div id='bh'>
+            <p id='p3'>编号:20141126113751316337</p>
+
+            <p id='p3'>品牌:iPhone 5S 厂家:苹果 <span>所在地:北京</span></p>
+        </div>
+        <img src="img/未标题-44.jpg" alt="">
+
+        <div id='ljg'>
+            <div id='ljgm'><b>立即购买</b></div>
+            <div id='ljgm'><b>加入购物车</b></div>
+            <div id='ljgm'><b>加入收藏</b></div>
+        </div>
+        <div id='dg'>
+            <p>订购说明</p>
+        </div>
+        <div id='hy'>
+            <div id='jy1'>
+                <div id='jyls'>
+                    <ul>
+                        <li>货源类别</li>
+                        <li>材质</li>
+                        <li>风格</li>
+                        <li>箱包形状</li>
+                        <li>硬度</li>
+                        <li>是否外贸</li>
+                        <li>颜色</li>
+                    </ul>
+                </div>
+                <div id='jg1'>
+                    <ul>
+                        <li>现货</li>
+                        <li>真皮</li>
+                        <li>韩版风范</li>
+                        <li>竖款方型</li>
+                        <li>中</li>
+                        <li>否</li>
+                        <li>白色,黑色,杏色,玫红色</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id='jy2'>
+                <div id='jyls'>
+                    <ul>
+                        <li>货号</li>
+                        <li>皮质特征</li>
+                        <li>款式</li>
+                        <li>肩带根数</li>
+                        <li>流行元素</li>
+                        <li>是否库存</li>
+
+                    </ul>
+                </div>
+                <div id='jg1'>
+                    <ul>
+                        <li>80008-3</li>
+                        <li>牛皮</li>
+                        <li>手提包,单肩包,斜挎包</li>
+                        <li>单根</li>
+                        <li>鳄鱼纹</li>
+                        <li>是</li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+<div id='cd'>
+    <div id='cdt'>
+        <img src="img/未标题-45.jpg" alt="">
+    </div>
+    <div id='cxt'>
+        <div id='tucp'>
+            <span id='s5'>推荐产品</span><span id='s6'>更多>></span>
+            <ul>
+                <li><img src="img/未标题-46.jpg" alt=""></li>
+                <li><img src="img/未标题-47.jpg" alt=""></li>
+                <li><img src="img/未标题-48.jpg" alt=""></li>
+                <li><img src="img/未标题-49.jpg" alt=""></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!-- 底部开始 -->
+<div class="foot1">
+    <div class="foot1_01">
+        <ul>
+            <li style="font-weight:bold;"><img src="img/未标题-12.jpg"/>新手指南</li>
+            <li>操作指南</li>
+            <li style="text-indent:30px;">免费注册</li>
+            <li style="text-indent:30px;">热门问题</li>
+        </ul>
+        <ul>
+            <li style="font-weight:bold;"><img src="img/未标题-13.jpg"/>供应指南</li>
+            <li>设置店铺</li>
+            <li style="text-indent:30px;">添加商品</li>
+            <li style="text-indent:30px;">销售发货</li>
+        </ul>
+        <ul>
+            <li style="font-weight:bold;"><img src="img/未标题-14.jpg"/>分销指南</li>
+            <li>选货下单</li>
+            <li style="text-indent:30px;">支付贷款</li>
+            <li style="text-indent:30px;">开始代卖</li>
+        </ul>
+        <ul>
+            <li style="font-weight:bold;"><img src="img/未标题-15.jpg"/>支付与提现</li>
+            <li>提现方式</li>
+            <li style="text-indent:30px;">充值说明</li>
+            <li style="text-indent:30px;">支付方式</li>
+        </ul>
+        <ul style="border-right:0px; margin-right:0px;width:88px;">
+            <li style="font-weight:bold;"><img src="img/未标题-16.jpg"/>会员说明</li>
+            <li>供应商</li>
+            <li style="text-indent:30px;">分销商</li>
+            <li style="text-indent:30px;">有问必答</li>
+        </ul>
+    </div>
+</div>
+<div class="foot2">
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li>|</li>
+        <li><a href="#">产品大全</a></li>
+        <li>|</li>
+        <li><a href="#">供应中心</a></li>
+        <li>|</li>
+        <li><a href="#">分销中心</a></li>
+        <li>|</li>
+        <li><a href="#">格子铺专区</a></li>
+        <li>|</li>
+        <li style="margin-right:40px;"><a href="#">最新资讯</a></li>
+        <li><a href="#"><b>代卖供货：</b>分销商代卖操作方法</a></li>
+        <li>|</li>
+        <li><a href="#">店铺管理系统</a></li>
+        <li>|</li>
+        <li><a href="#">进货流程</a></li>
+        <li>|</li>
+        <li><a href="#">分销商入口</a></li>
+        <li>|</li>
+        <li style="margin-right:0px;"><a href="#">供应入口</a></li>
+    </ul>
+</div>
+<div class="foot3">
+    <div class="foot03_nr">
+        <div class="foot03_n_z">
+            Copyright© 2013 xiangyunshangwu.com All Rights Reserved 58代卖版权所有<br/>
+            ICP证：京ICP备13019928号
+        </div>
+        <div class="foot03_n_zh">
+      <span>
+        <img src="img/未标题-17.jpg"/><br/>
+        卖家保证
+      </span>
+      <span>
+        <img src="img/未标题-18.jpg"/><br/>
+        商家认证
+      </span>
+      <span style="border-right:0px;">
+        <img src="img/未标题-19.jpg"/><br/>
+        安全交易
+      </span>
+        </div>
+        <div class="foot03_n_y">
+            <img src="img/未标题-20.jpg"/>
+            010-88333615
+        </div>
+    </div>
+</div>
+<!-- 底部结束 -->
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+*{margin:0;padding:0;}
+body{margin:0;padding:0;font-size:12px;color:#646464;font-family:"微软雅黑";}
+ol,ul,li,p,img{display:block;margin:0;padding:0;}
+ol,ul,li,{list-style:none;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+.top{width:100%;height:30px;background:#f6f6f6;border-bottom:1px solid #e5e5e5;margin:0 auto;}
+.top1{width:1000px;height:30px;margin:0 auto;}
+.top1-left{float:left;width:90px;height:30px;}
+.top1-right{float:right;width:555px;height:30px;line-height:30px;}
+.div{
+	display:none;
+	width: 90px;
+	height: 76px;
+	border: 1px solid #CCC;
+	position: absolute;
+	left: 769px;
+	top: 31px;
+	float: left;
+	z-index: 1;
+	float: left;
+	background: #FFF;
+	line-height: 25px;
+	text-align: center;
+}
+.div a{color:#939393;display:block;font-size:10px;}
+.div a:hover{background:#939393;color:#e21512;}
+.logo{width:100%;height:106px;margin:0 auto;}
+.logo1{width:1000px;height:106px;margin:0 auto;}
+.nav{width:100%;height:43px;background-image:url(../img/a17.jpg);margin:0 auto;}
+.nav1{width:1000px;height:43px;margin:0 auto;position:relative;}
+.nav1 ul li{width:140px;height:43px;font-size:16px;line-height:38px;list-style:none;text-align:center;display:block;float:left;}
+.nav1 ul li a{width:138px;height:40px;display:block;color:#FFF;float:left;}
+.nav1 ul li a:hover{color:#fff;background:#ce110f;}
+.nav1 ul li ul{display:none;position:absolute;top:40px;width:138px;height:150px;}
+.nav1 ul li ul li{text-align:center;color:#fff;width:138px;height:30px;display:inline-block;background:#CE110F;line-height:30px;}
+.nav1 ul li ul li:hover{width:138px;height:30px;display:inline-block;background:#fff;color:#FF0600;
+}
+.weizhi{width:100%;height:50px;background:#fafafa;margin:0 auto;}
+.weizhi1{width:1000px;height:50px;color:#646464;line-height:50px;margin:0 auto;}
+.weizhi1 a{color:#919191;}
+.weizhi1 a:hover{color:#e21210;}
+.content{width:100%;height:370px;margin:0 auto;margin-top:20px;}
+.content1{width:1000px;height:370px;margin:0 auto;}
+.gongxi{width:320px;height:46px;margin:0 auto;margin-top:140px;}
+.fh{width:252px;height:64px;line-height:64px;padding-left:68px;color:#666666;margin:0 auto;}
+.fh a{color:#666666;}
+.fh a:hover{color:#e3120e;}
+.nr{width:795px;height:40px;background:#f3f3f3;color:#656565;line-height:40px;text-align:center;}
+.foot{width:100%;height:165px;border-top:1px solid #dddddd;border-bottom:1px solid #dddddd;background:#f9f9f9;margin:0 auto;margin-top:30px;}
+.foot1{width:1000px;height:165px;margin:0 auto;}
+.foot1 ul li a:hover{color:#e21210;}
+.foot1-1{width:153px;height:110px;float:left;margin-top:30px;}
+.foot1-1 ul{width:58px;height:110px;float:left;margin-left:5px;}
+.foot1-1 ul li a{width:58px;height:27px;color:#676767;text-align:center;line-height:27px;}
+.hei{width:63px;height:27px;color:#000;text-align:center;line-height:27px;}
+.foot1-2{width:230px;height:110px;float:left;margin-top:30px;border-left:1px solid #e6e6e6;}
+.foot1-2 ul{width:63px;height:110px;float:left;margin-left:5px;}
+.foot1-2 ul li a{width:63px;height:27px;color:#676767;text-align:center;line-height:27px;}
+.foot-nav{width:100%;height:42px;border-bottom:1px solid #dddddd;background:#f9f9f9;margin:0 auto;}
+.foot-nav1{width:1000px;height:42px;color:#e5e5e5;line-height:42px;font-size:11px;margin:0 auto;}
+.foot-nav1 a{color:#646464;}
+.foot-nav1 a:hover{color:#e21210;}
+.dibu{width:100%;height:122px;background:#f9f9f9;margin:0 auto;}
+.dibu1{width:1000px;height:87px;padding-top:35px;margin:0 auto;}
+.dibu1 span a{color:#646464;}
+</style>
+<script src="../jquery-1.11.2.js"></script>
+<script type="text/javascript">
+$(function(){
+	var xiangyun=$('.xiangyun')
+	xiangyun.mouseover(function(){
+		$('.div').stop().slideDown();
+	})
+	xiangyun.mouseout(function(){
+		$('.div').stop().slideUp();
+	})
+	$('.div').hover(function(){
+		$(this).stop().slideDown();
+	},function(){
+		$(this).stop().slideUp();
+	})
+	
+	
+	var oLi=$('.nav1 ul>li');
+	oLi.hover(function(){
+		$(this).find('ul').stop().slideToggle();//切换开关
+	})
+})
+</script>
+</head>
+
+<body>
+<div class="top">
+	<div class="top1">
+    	<div class="top1-left">
+            <span style="float:left;"><img src="../img/a01.jpg" /></span>
+            <span style="float:left;line-height:30px;">收藏58代卖</span>
+        </div>
+        <div class="top1-right">
+            <span style="float:left;">您好，欢迎来到58代卖</span>
+            <span style="float:left;margin-left:14px;"><img src="../img/a02.jpg" /></span>
+            <span style="float:left;">xiangyun</span>
+            <span class="xiangyun" style="float:left;"><img src="../img/a14.jpg" /></span>
+            <div class="div">
+               <a href="#" style="background:url(../img/a05.jpg);background-position:center left;background-repeat:no-repeat;">我的淘宝</a>
+               <a href="#" style="background:url(../img/a06.jpg);background-position:center left;background-repeat:no-repeat;">买家评价</a>
+               <a href="#" style="background:url(../img/a07.jpg);background-position:center left;background-repeat:no-repeat;">卖家中心</a>
+            </div>
+          <span style="float:left;margin-left:16px;">可用云货币：<c style="color:#e1110f;">￥401.01</c>　｜　<a  href="#" style="color:#646464;">关于我们</a>　｜　<a  href="#" style="color:#646464;">联系我们</a></span>
+        </div>
+	</div>
+</div>
+<div class="logo">
+	<div class="logo1">
+    	<span style="float:left;"><img src="../img/a04.jpg" /></span>
+        <span style="float:right;">
+        	<input type="text" value="请输入关键词" style="width:387px;height:36px;color:#636363;border:1px solid #eeeeee;margin-top:25px;margin-bottom:8px;"/><input type="button" value="搜索"/ style="color:#FFF;width:73px;height:36px;background:#e31110;border:1px solid #bf0705;"><br />
+            <c style="color:#000;">热门搜索：</c><a href="#" style="color:#646464;">代卖优势</a>　|　<a href="#" style="color:#646464;">成功案例</a>　|　<a href="#" style="color:#646464;">创业秘籍</a>　|　<a href="#" style="color:#ff0502;">商品大全</a>
+        </span>
+    </div>
+</div>
+<div class="nav">
+	<div class="nav1">
+    	<ul>
+        	<li style="height:40px;background:#ce110f;"><a href="JavaScript:;" >首页</a>
+            	<ul>
+                    <li>首页</li>
+                    <li>首页</li>
+                    <li>首页</li>
+                    <li>首页</li>
+                    <li>首页</li>
+               </ul>
+          	</li>
+            <li><a href="JavaScript:;">产品大全</a>
+            	<ul>
+                    <li>产品大全</li>
+                    <li>产品大全</li>
+                    <li>产品大全</li>
+                    <li>产品大全</li>
+                </ul>
+            </li>
+            <li><a href="JavaScript:;">供应中心</a>
+            	<ul>
+                    <li>供应中心</li>
+                    <li>供应中心</li>
+                    <li>供应中心</li>
+                </ul>
+            </li>
+            <li style="height:40px;background:#ce110f;"><a href="JavaScript:;" >分销中心</a>
+            	<ul>
+                    <li>分销中心</li>
+                    <li>分销中心</li>
+                </ul>
+            </li>
+            <li><a href="JavaScript:;">格子铺专区</a>
+            	<ul>
+                    <li>格子铺专区</li>
+                    <li>格子铺专区</li>
+                    <li>格子铺专区</li>
+                </ul>
+            </li>
+            <li><a href="JavaScript:;">操作流程</a>
+            	<ul>
+                    <li>操作流程</li>
+                    <li>操作流程</li>
+                    <li>操作流程</li>
+                    <li>操作流程</li>
+                    <li>操作流程</li>
+                </ul>
+            </li>
+        </ul>
+	</div>
+</div>
+<div class="weizhi">
+	<div class="weizhi1">您现在的位置：<a href="#">58代卖</a> > <a href="#">会员中心</a> > <a href="#">我的店铺</a> > <a href="#">购物订单管理</a></div>
+</div>
+<div class="content">
+	<div class="content1">
+    	<div class="gongxi">
+        	<span style="float:left;"><img src="../img/a23.jpg" /></span>
+            <span style="margin-left:20px;font-size:26px;line-height:50px;">恭喜您，注册成功！</span>
+        </div>
+        <div class="fh"><a href="#">返回首页</a>　|　<a href="#">直接登录</a></div>
+    </div>
+</div>
+<div class="foot">
+	<div class="foot1">
+       <div class="foot1-1">
+           <img src="../img/a08.jpg" width="30" height="27" style="float:left;">
+                <ul>
+                  <li class="hei">新手指南</li>
+                  <li><a href="#">操作指南</a></li>
+                  <li><a href="#">免费注册</a></li>
+                  <li><a href="#">热门问题</a></li>
+                </ul>
+       </div>
+       <div class="foot1-2">
+           <img src="../img/a09.jpg" width="30" height="27" style="float:left;margin-left:62px;">
+                <ul>
+                  <li class="hei">供应指南</li>
+                  <li><a href="#">设置店铺</a></li>
+                  <li><a href="#">添加商品</a></li>
+                  <li><a href="#">销售发货</a></li>
+                </ul>
+       </div>
+       <div class="foot1-2">
+           <img src="../img/a10.jpg" width="30" height="27" style="float:left;margin-left:62px;">
+                <ul>
+                  <li class="hei">分销指南</li>
+
+                  <li><a href="#">选货下单</a></li>
+                  <li><a href="#">支付货款</a></li>
+                  <li><a href="#">开始代买</a></li>
+                </ul>
+       </div>
+       <div class="foot1-2">
+           <img src="../img/a11.jpg" width="30" height="27" style="float:left;margin-left:62px;">
+                <ul>
+                  <li class="hei">支付与体现</li>
+                  <li><a href="#">体现方式</a></li>
+                  <li><a href="#">充值说明</a></li>
+                  <li><a href="#">支付说明</a></li>
+                </ul>
+       </div>
+       <div class="foot1-1">
+           <img src="../img/a12.jpg" width="30" height="27" style="float:left;margin-left:36px;">
+                <ul>
+                  <li class="hei">会员说明</li>
+                  <li><a href="#">供应商</a></li>
+                  <li><a href="#">分销商</a></li>
+                  <li><a href="#">有问必答</a></li>
+                </ul>
+       </div>
+	</div>
+</div>
+<div class="foot-nav">
+	<div class="foot-nav1"><a href="#">首页</a> ｜ <a href="#">产品大全</a> ｜ <a href="#">供应中心</a> ｜ <a href="#">分销中心</a> ｜ <a href="#">格子铺专区</a> ｜ <a href="#">最新资讯</a>　　　　　　　　<c style="color:#333;">代买供货：</c><a href="#">分销商代卖操作方法</a> ｜ <a href="#">店铺管理系统</a> ｜ <a href="#">进货流程</a> ｜ <a href="#">分销商入口</a> ｜ <a href="#">进货流程</a> ｜ <a href="#">分销商入口</a> ｜ <a href="#">供应入口</a></div>
+</div>
+<div class="dibu">
+	<div class="dibu1">
+		<span style="float:left;line-height:26px;color:#989898;">Copyright@ 2013xiangyunshangwu.com All Rights Reserved 58代买版权所有<br />
+		Icp证：京icp备13019928号</span>
+    	<span style="float:left;width:264px;height:59px;text-align:center;line-height:100px;background-image:url(../img/a13.jpg);margin-left:50px;"><a href="#">卖家保证</a>　　　 <a href="#">商家认证</a>　　　 <a href="#">安全交易</a></span>
+        <span style="float:left;width:112px;height:38px;margin-top:10px;padding-left:43px;font-size:14px;line-height:38px;background-image:url(../img/a16.jpg);background-repeat:no-repeat;margin-left:90px;"><b>010-88333615</b></span>
+	</div>
+</div>
+</body>
+</html>
+
+ 
